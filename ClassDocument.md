@@ -22,4 +22,5 @@ pysal.core.FileIO.FileIO.**[open](http://www.pysal.org/library/open.html#FileIO.
 Method |Description                                               
 ---|---
 scipy.spatial.**[ConvexHull](http://docs.scipy.org/doc/scipy-dev/reference/generated/scipy.spatial.ConvexHull.html)**(points[, incremental, qhull_options]) | Creates a Convex hulls in N dimensions.
-Polygon.**makeConvexHull**(points[, incremental, qhull_options]) | Returns coordinates of a Convex hull in 2-D array
+Polygon.**makeConvexHull**(points[, incremental, qhull_options]) | Returns coordinates of a Convex hull in numpy 2-D array
+Polygon.**makeMBR**(points) | Returns coordinates of a MBR in numpy 2-D array
