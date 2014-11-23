@@ -9,9 +9,10 @@ def __init__(self, params):
         
 def makeConvexHull(points, incremental=False, qhull_options=None):
     hull = ConvexHull(points, incremental=False, qhull_options=None)
-    convexHullArray=[]
+    convexHullList=[]
     for j in hull.vertices:
-        convexHullArray.append([points[j,0], points[j,1]])
+        convexHullList.append([points[j,0], points[j,1]])
+    convexHullArray = np.array(convexHullList)
     return convexHullArray
     
  def makeMBR(points):
