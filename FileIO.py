@@ -12,3 +12,4 @@ def openFile(connectionString, mode='r'):
     outputArray = []
     for i in shp:
         outputArray.append(i)
+    return outputArray
